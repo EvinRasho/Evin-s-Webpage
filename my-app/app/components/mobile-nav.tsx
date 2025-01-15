@@ -18,15 +18,13 @@ export default function MobileNav() {
                         </Link>
                     </SheetTitle>
                     <nav className='text-2xl flex flex-col justify-between gap-3 mt-6 '>
-                        <Link className='active:text-red-600' href='/about'>
+                        <Link className='active:text-red-600' href='/about-me'>
                             About
                         </Link>
                         <Link className='active:text-red-600' href='/projects'>
                             Projects
                         </Link>
-                        <Link className='active:text-red-600' href='/contact'>
-                            Resume
-                        </Link>
+                        <Link className='active:text-red-600' href='/Resume'>Resume</Link>
                     </nav>
                 </SheetContent>
             </Sheet>
