@@ -1,35 +1,35 @@
 import {} from 'lucide-react';
 import Card, { CardProps } from '../components/card';
 import { RiNextjsFill, RiTailwindCssFill, RiNodejsLine, RiReactjsFill } from 'react-icons/ri';
-import { BiLogoTypescript } from 'react-icons/bi';
+import { BiLogoTypescript, BiLogoPython } from 'react-icons/bi';
+import { SiPytorch } from 'react-icons/si';
 
 export default function Projects() {
     const arrayofProjects: CardProps[] = [
         {
             title: 'Personal Website',
             description: 'This is my personal website that I built using Next.js and Tailwind CSS. I used Lucide Icons for the icons.',
-            image: '/website.jpg',
-            techStackicons: [
-                <RiNextjsFill  className="hover:scale-105 " size={45} key={'Next.Js' } title="Next.Js"  />,
-                <RiTailwindCssFill  className="hover:scale-105" size={45} key={'Tailwind'} fill='cyan' title='Tailwind' />,
-                <BiLogoTypescript  className="hover:scale-105" size={45} key={'TypeScript'} fill='#1d4ed8' title='TypeScript' />,
-                <RiNodejsLine  className="hover:scale-105" size={45} key={'Node.Js'} fill='limegreen' title='Node.Js'/>,
-                <RiReactjsFill  className="hover:scale-105" size={45} key={'React.Js'} fill='cyan' title='React.Js'/>,
-            ],
-            linkToProject: 'https://www.google.com',
-        },
-        {
-            title: 'Project 2',
-            description: 'This is a project that I worked on using Next.js and Tailwind CSS. I used Lucide Icons for the icons.',
             image: '/website.png',
             techStackicons: [
-                <RiNextjsFill  className="hover:scale-105 " size={45} key={'Next.Js' } title="Next.Js"  />,
-                <RiTailwindCssFill  className="hover:scale-105" size={45} key={'Tailwind'} fill='cyan' title='Tailwind' />,
-                <BiLogoTypescript  className="hover:scale-105" size={45} key={'TypeScript'} fill='#1d4ed8' title='TypeScript' />,
-                <RiNodejsLine  className="hover:scale-105" size={45} key={'Node.Js'} fill='limegreen' title='Node.Js'/>,
-                <RiReactjsFill  className="hover:scale-105" size={45} key={'React.Js'} fill='cyan' title='React.Js'/>,
+                <RiNextjsFill className='hover:scale-105 ' size={45} key={'Next.Js'} title='Next.Js' />,
+                <RiTailwindCssFill className='hover:scale-105' size={45} key={'Tailwind'} fill='cyan' title='Tailwind' />,
+                <BiLogoTypescript className='hover:scale-105' size={45} key={'TypeScript'} fill='#1d4ed8' title='TypeScript' />,
+                <RiNodejsLine className='hover:scale-105' size={45} key={'Node.Js'} fill='limegreen' title='Node.Js' />,
+                <RiReactjsFill className='hover:scale-105' size={45} key={'React.Js'} fill='cyan' title='React.Js' />,
             ],
-            linkToProject: 'https://www.google.com',
+            linkToProject: 'https://github.com/EvinRasho/Evin-s-Webpage',
+        },
+        {
+            title: 'Random cat image generator',
+            description:
+                'This I used python and Pytorch to build a random cat image using Wasserstein GAN (WGAN). Similar to the this personal does not exist website. Dataset was grabbed from a public github called Cat-faces-dataset.',
+            image: '/cats.png',
+            techStackicons: [
+                // <RiNextjsFill className='hover:scale-105 ' size={45} key={'Next.Js'} title='Next.Js' />,
+                <BiLogoPython className='hover:scale-105' size={45} key={'Python'} fill='yellow' title='Python' />,
+                <SiPytorch className='hover:scale-105' size={45} key={'Pytorch'} fill='orange' title='Pytorch' />,
+            ],
+            linkToProject: 'https://github.com/EvinRasho/Generative-AI-',
         },
     ];
 
@@ -44,7 +44,7 @@ export default function Projects() {
                 </h1>
             </div>
 
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10  z-0 mx-5'>
+            <div className='grid grid-cols-1 h-[35rem] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10  z-0 mx-5'>
                 {arrayofProjects.map((project, index) => (
                     <Card
                         key={index}
@@ -56,8 +56,6 @@ export default function Projects() {
                     />
                 ))}
             </div>
-
-
         </div>
     );
 }

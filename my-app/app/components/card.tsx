@@ -15,7 +15,7 @@ export interface CardProps {
 export default function Card({ image, title, description,techStackicons, linkToProject } : CardProps) {
 
     return (
-        <div className='relative flex flex-col my-6  shadow-sm overflow-hidden  border-slate-200 border-4 rounded-xl w-full h-full backdrop-blur-lg bg-background/50 hover:scale-105 hover:border-red-600 !hover:font-bold'>
+        <div className='relative flex flex-col my-6 shadow-sm overflow-hidden  border-slate-200 border-4 rounded-xl w-full h-full backdrop-blur-lg bg-background/50 hover:scale-105 hover:border-red-600 !hover:font-bold'>
             <div className='h-full w-full flex justify-center overflow-hidden text-white rounded-md'>
                 <Image
                     width={1000}
@@ -25,11 +25,11 @@ export default function Card({ image, title, description,techStackicons, linkToP
                     className=' object-cover h-full w-full'
                 />
             </div>
-            <div className='p-4'>
+            <div className='p-4 h-full'>
                 <div className='flex items-center mb-2'>
-                    <h6 className='text-slate-100 text-xl font-semibold'>{title}</h6>
+                    <h6 className='text-slate-100 text-xl font-semibold h-full'>{title}</h6>
                 </div>
-                <p className='text-slate-100 leading-normal font-light'>{description}</p>
+                <p className='text-slate-100 leading-normal font-light h-full'>{description}</p>
             </div>
 
             <div className='group my-3 inline-flex flex-wrap justify-center items-center gap-2 '>
