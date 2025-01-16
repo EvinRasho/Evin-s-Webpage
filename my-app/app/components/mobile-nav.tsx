@@ -9,12 +9,12 @@ export default function MobileNav() {
 
     const pathname = usePathname();
     return (
-        <div className='md:hidden '>
+        <div className='md:hidden z-[100] '>
             <Sheet>
                 <SheetTrigger className='ml-4'>
                     <Menu></Menu>
                 </SheetTrigger>
-                <SheetContent side='left' className='opacity-100 bg-black border-r-foreground'>
+                <SheetContent side='left' className='opacity-100 bg-black border-r-foreground z-[100]'>
                     <SheetTitle>
                         <Link href='/'>
                             <House
