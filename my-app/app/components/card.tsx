@@ -15,7 +15,7 @@ export interface CardProps {
 export default function Card({ image, title, description,techStackicons, linkToProject } : CardProps) {
 
     return (
-        <div className='relative flex flex-col my-6 bg-white shadow-sm overflow-hidden  border-slate-200 border-4 rounded-xl w-full h-full backdrop-blur-lg bg-background/50 hover:scale-105 hover:border-red-600 !hover:font-bold'>
+        <div className='relative flex flex-col my-6  shadow-sm overflow-hidden  border-slate-200 border-4 rounded-xl w-full h-full backdrop-blur-lg bg-background/50 hover:scale-105 hover:border-red-600 !hover:font-bold'>
             <div className='h-full w-full flex justify-center overflow-hidden text-white rounded-md'>
                 <Image
                     width={1000}

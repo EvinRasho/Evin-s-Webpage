@@ -21,7 +21,7 @@ export default function Projects() {
         {
             title: 'Project 2',
             description: 'This is a project that I worked on using Next.js and Tailwind CSS. I used Lucide Icons for the icons.',
-            image: '/website.jpg',
+            image: '/website.png',
             techStackicons: [
                 <RiNextjsFill  className="hover:scale-105 " size={45} key={'Next.Js' } title="Next.Js"  />,
                 <RiTailwindCssFill  className="hover:scale-105" size={45} key={'Tailwind'} fill='cyan' title='Tailwind' />,
@@ -56,6 +56,8 @@ export default function Projects() {
                     />
                 ))}
             </div>
+
+
         </div>
     );
 }
