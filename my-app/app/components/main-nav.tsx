@@ -6,7 +6,6 @@ import { usePathname } from 'next/navigation';
 
 export default function MainNav() {
     const pathname = usePathname();
-    console.log(pathname);
   return (
       <div className='hidden md:flex justify-center items-center bg-background'>
           <Link href='/' >

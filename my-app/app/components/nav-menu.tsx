@@ -8,7 +8,7 @@ import {Github, Linkedin } from 'lucide-react';
 
 export function NavBar() {
     return (
-        <header className='sticky top-0 w-full border-b bg-background'>
+        <header className='sticky top-0 w-full border-b bg-background z-[100]'>
             <div className='h-14 flex items-center justify-between px-4'>
                 {/* Desktop */}
                 <MainNav />
