@@ -8,7 +8,8 @@ export default function Projects() {
     const arrayofProjects: CardProps[] = [
         {
             title: 'Personal Website',
-            description: 'This is my personal website that I built using Next.js and Tailwind CSS. I used Lucide Icons for the icons. I deployed it on Vercel, and I used TypeScript for the type checking.',
+            description:
+                'This is my personal website, built using Next.js and Tailwind CSS. I incorporated Lucide Icons for the iconography and deployed the site on Vercel.Additionally, I utilized TypeScript for type checking.The website is fully responsive and optimized for both desktop and mobile devices.',
             image: '/website.png',
             techStackicons: [
                 <RiNextjsFill className='hover:scale-105 ' size={45} key={'Next.Js'} title='Next.Js' />,
@@ -22,7 +23,7 @@ export default function Projects() {
         {
             title: 'Random cat image generator',
             description:
-                'This I used python and Pytorch to build a random cat image using Wasserstein GAN (WGAN). Similar to the this personal does not exist website. Dataset was grabbed from a public github called Cat-faces-dataset.',
+                "I used Python and PyTorch to build a random cat image generator using Wasserstein GAN (WGAN), similar to the 'This Person Does Not Exist' website. The dataset was sourced from a public GitHub repository called 'Cat-faces-dataset'.",
             image: '/cats.png',
             techStackicons: [
                 <BiLogoPython className='hover:scale-105' size={45} key={'Python'} fill='yellow' title='Python' />,

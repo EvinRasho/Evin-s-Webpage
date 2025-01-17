@@ -3,7 +3,8 @@
 import Link from 'next/link';
 import MainNav from './main-nav';
 import MobileNav from './mobile-nav';
-import {Github, Linkedin } from 'lucide-react';
+import { Github, Linkedin,Download } from 'lucide-react';
+
 
 
 export function NavBar() {
@@ -18,6 +19,15 @@ export function NavBar() {
 
                 {/* Desktop & Mobile */}
                 <div className='flex items-center space-x-4 ml-auto justify-end px-4'>
+                    <Link
+                        title='View Resume'
+                        as={'/Resume.pdf'}
+                        href='/Resume.pdf'
+                        aria-label='Resume'
+                        target='_blank'
+                        rel='noopener noreferrer'>
+                        <Download className='hover:text-gray-700' size={35} />
+                    </Link>
                     <Link
                         as={'https://www.linkedin.com/in/evin-rasho'}
                         href='https://www.linkedin.com/in/evin-rasho'
