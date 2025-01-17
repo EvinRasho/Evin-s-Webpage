@@ -9,7 +9,7 @@ import {Github, Linkedin } from 'lucide-react';
 export function NavBar() {
     return (
         <header className='sticky top-0 w-full border-b bg-background z-[20]'>
-            <div className='h-14 flex items-center justify-between px-4'>
+            <div className='h-14 flex items-center justify-between md:px-4'>
                 {/* Desktop */}
                 <MainNav />
 
@@ -17,12 +17,22 @@ export function NavBar() {
                 <MobileNav />
 
                 {/* Desktop & Mobile */}
-                <div className='flex items-center space-x-4 ml-auto justify-end'>
-                    <Link href='https://www.linkedin.com/in/evin-rasho' aria-label='LinkedIn'>
-                        <Linkedin className='hover:text-gray-700' size={45} />
+                <div className='flex items-center space-x-4 ml-auto justify-end px-4'>
+                    <Link
+                        as={'https://www.linkedin.com/in/evin-rasho'}
+                        href='https://www.linkedin.com/in/evin-rasho'
+                        aria-label='LinkedIn'
+                        target='_blank'
+                        rel='noopener noreferrer'>
+                        <Linkedin className='hover:text-gray-700' size={35} />
                     </Link>
-                    <Link href='https://github.com/EvinRasho' aria-label='GitHub'>
-                        <Github className='hover:text-gray-700' size={45} />
+                    <Link
+                        as={'https://www.linkedin.com/in/evin-rasho'}
+                        href='https://github.com/EvinRasho'
+                        aria-label='GitHub '
+                        target='_blank'
+                        rel='noopener noreferrer'>
+                        <Github className='hover:text-gray-700' size={35} />
                     </Link>
                 </div>
             </div>

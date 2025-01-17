@@ -8,7 +8,7 @@ export default function Projects() {
     const arrayofProjects: CardProps[] = [
         {
             title: 'Personal Website',
-            description: 'This is my personal website that I built using Next.js and Tailwind CSS. I used Lucide Icons for the icons.',
+            description: 'This is my personal website that I built using Next.js and Tailwind CSS. I used Lucide Icons for the icons. I deployed it on Vercel, and I used TypeScript for the type checking.',
             image: '/website.png',
             techStackicons: [
                 <RiNextjsFill className='hover:scale-105 ' size={45} key={'Next.Js'} title='Next.Js' />,
@@ -25,7 +25,6 @@ export default function Projects() {
                 'This I used python and Pytorch to build a random cat image using Wasserstein GAN (WGAN). Similar to the this personal does not exist website. Dataset was grabbed from a public github called Cat-faces-dataset.',
             image: '/cats.png',
             techStackicons: [
-                // <RiNextjsFill className='hover:scale-105 ' size={45} key={'Next.Js'} title='Next.Js' />,
                 <BiLogoPython className='hover:scale-105' size={45} key={'Python'} fill='yellow' title='Python' />,
                 <SiPytorch className='hover:scale-105' size={45} key={'Pytorch'} fill='orange' title='Pytorch' />,
             ],
@@ -35,16 +34,16 @@ export default function Projects() {
 
     return (
         <div className='flex flex-col space-y-5'>
-            <div className='flex flex-col items-center justify-center w-full flex-1 px-20 text-center'>
-                <h1 className='text-6xl font-bold'>Projects</h1>
+            <div className='flex flex-col items-center justify-center w-full flex-1 text-center py-5'>
+                <h1 className='text-2xl md:text-4xl font-bold'>Projects</h1>
             </div>
-            <div className='flex flex-col items-center justify-center w-full flex-1 px-20 text-center'>
-                <h1 className='text-xl font-bold'>
+            <div className='flex flex-col items-center justify-center w-full flex-1 text-center px-5'>
+                <h1 className='text-l md:text-xl font-bold'>
                     Here are some of the projects that I have worked on. Click on the project to learn more about it.
                 </h1>
             </div>
 
-            <div className='grid grid-cols-1 h-[35rem] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10  z-0 mx-5'>
+            <div className='grid grid-cols-1 h-full sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-10  z-0 mx-5'>
                 {arrayofProjects.map((project, index) => (
                     <Card
                         key={index}
