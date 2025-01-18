@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         url: 'https://evin-rasho.dev', // Replace with your domain
         images: [
             {
-                url: 'https://evin-rasho.dev/drone.jpg', // Replace with your image URL
+                url: 'https://evin-rasho.dev/website_picture.png', // Replace with your image URL
                 width: 1200,
                 height: 630,
                 alt: "Evin's Webpage Banner",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         creator: '@evinbrasho',
         description: 'My Personal Website',
-        images: 'https://evin-rasho.dev/drone.jpg',
+        images: 'https://evin-rasho.dev/website_picture.png',
         site: 'https://www.evin-rasho.dev',
         title: 'Evin Rasho',
         creatorId: '@evinbrasho',
