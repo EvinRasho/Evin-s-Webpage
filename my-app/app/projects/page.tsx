@@ -2,7 +2,7 @@ import {} from 'lucide-react';
 import Card, { CardProps } from '../components/card';
 import { RiNextjsFill, RiTailwindCssFill, RiNodejsLine, RiReactjsFill } from 'react-icons/ri';
 import { BiLogoTypescript, BiLogoPython } from 'react-icons/bi';
-import { SiPytorch } from 'react-icons/si';
+import { SiPytorch, SiRos, SiFlask, SiOpencv } from 'react-icons/si';
 
 export default function Projects() {
     const arrayofProjects: CardProps[] = [
@@ -30,6 +30,19 @@ export default function Projects() {
                 <SiPytorch className='hover:scale-105' size={45} key={'Pytorch'} fill='orange' title='Pytorch' />,
             ],
             linkToProject: 'https://github.com/EvinRasho/Generative-AI-',
+        },
+        {
+            title: 'Drone Video Connection',
+            description:
+                'Connected a drone camera using the ROS system for seamless data communication and control. Built a Flask-based UI to display multiple camera views, including raw feed, processed images with the MIDAS model, and RealSense depth views. Enhanced visual data analysis with MIDAS image processing and RealSense depth insights for improved usability',
+            image: '/drone.jpg',
+            techStackicons: [
+                <SiRos className='hover:scale-105' size={40} key={'ROS'} fill='#082f49' title='ROS' />,
+                <BiLogoPython className='hover:scale-105' size={45} key={'Python'} fill='yellow' title='Python' />,
+                <SiFlask className='hover:scale-105' size={45} key={'Flask'} fill='#082f49' title='Flask' />,
+                <SiOpencv className='hover:scale-105' size={45} key={'OpenCV'} fill='#22c55e' title='OpenCV' />,
+            ],
+            linkToProject: 'https://github.com/isl-org/MiDaS',
         },
     ];
 

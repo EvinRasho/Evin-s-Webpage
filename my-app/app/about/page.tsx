@@ -48,12 +48,6 @@ export default function AboutMe() {
                     height={400}
                 />
             </div>
-            {/* <div className='flex flex-col items-center justify-center w-full flex-1 px-5 '>
-                <h1 className='text-md md:text-xl font-semibold text-start'>
-                    I&apos;m currently looking for a full time software engineering or data science position. If you would like to get in touch with
-                    me, feel free to reach out to me on LinkedIn or Github.
-                </h1>
-            </div> */}
         </div>
     );
 }
