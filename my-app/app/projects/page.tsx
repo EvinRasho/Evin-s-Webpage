@@ -51,11 +51,6 @@ export default function Projects() {
             <div className='flex flex-col items-center justify-center w-full flex-1 text-center py-5'>
                 <h1 className='text-2xl md:text-4xl font-bold'>Projects</h1>
             </div>
-            <div className='flex flex-col items-center justify-center w-full flex-1 text-center px-5'>
-                <h1 className='text-l md:text-xl font-bold'>
-                    Here are some of the projects that I have worked on. Click on the project to learn more about it.
-                </h1>
-            </div>
 
             <div className='grid grid-cols-1 h-full sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-10  z-0 mx-5'>
                 {arrayofProjects.map((project, index) => (

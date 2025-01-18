@@ -16,17 +16,18 @@ export default function Card({ image, title, description,techStackicons, linkToP
 
     return (
         <div
-            className={`flex flex-col justify-between h-fit items-center shadow-sm min-h-full overflow-hidden  border-slate-200 border-4 rounded-xl w-full backdrop-blur-lg bg-background/50 hover:scale-105 hover:border-red-600 !hover:font-bold`}>
+            className={`flex flex-col justify-between h-fit items-center shadow-sm min-h-full overflow-hidden  border-slate-200 border-4 rounded-xl w-full backdrop-blur-lg bg-background/50`}>
             <div className='h-44 w-full overflow-hidden flex-shrink-0 hidden md:flex'>
                 <Image width={500} height={500} src={image} alt={title} className='h-full w-full object-cover' />
             </div>
-                <div className='p-4 h-full'>
+                <div className='p-2'>
                     <div className='flex items-center mb-2'>
-                        <h6 className='text-slate-100 text-xl font-semibold flex-grow-0'>{title}</h6>
+                        <h6 className='text-slate-100 text-xl font-semibold'>{title}</h6>
                     </div>
-                    <p className='text-slate-100 leading-normal font-light flex-grow-0'>{description}</p>
+                    <div className=''>
+                        <p className='text-slate-100 leading-normal font-light'>{description}</p>
+                    </div>
                 </div>
-
                 <div className='group my-3 inline-flex flex-wrap justify-center items-center gap-2 '>{techStackicons.map(icon => icon)}</div>
 
                 <div className='px-4 pb-4 pt-0 mt-2 flex '>
