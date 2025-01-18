@@ -1,7 +1,17 @@
 
 import { NavBar } from './components/nav-menu';
 import "./globals.css";
-import { Metadata } from 'next';
+import { Metadata, Viewport } from 'next';
+
+
+export const viewport: Viewport = {
+    themeColor: 'black',
+    colorScheme: 'dark',
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+    userScalable: true,
+};
 
 
 export const metadata: Metadata = {
