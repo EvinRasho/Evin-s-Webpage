@@ -9,19 +9,19 @@ export const metadata = {
         url: 'https://evin-rasho.dev', // Replace with your domain
         images: [
             {
-                url: 'https://yourdomain.com/drone.jpg', // Replace with your image URL
+                url: 'https://evin-rasho.dev/drone.jpg', // Replace with your image URL
                 width: 1200,
                 height: 630,
                 alt: "Evin's Webpage Banner",
             },
         ],
     },
-    twitter: {
-        card: 'summary_large_image',
-        title: "Evin's Webpage",
-        description: "Welcome to Evin's personal website",
-        images: ['https://yourdomain.com/path-to-your-image.jpg'], // Replace with your image URL
-    },
+    // twitter: {
+    //     card: 'summary_large_image',
+    //     title: "Evin's Webpage",
+    //     description: "Welcome to Evin's personal website",
+    //     images: ['https://yourdomain.com/path-to-your-image.jpg'], // Replace with your image URL
+    // },
 };
 
 export default function Home() {
