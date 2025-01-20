@@ -2,6 +2,7 @@
 import { NavBar } from './components/nav-menu';
 import "./globals.css";
 import { Metadata, Viewport } from 'next';
+import ThemeProvider from './components/theme-provider';
 
 
 export const viewport: Viewport = {
@@ -49,10 +50,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en'>
+    <html suppressHydrationWarning lang='en'>
       <body>
-        <NavBar />
-        {children}
+        <ThemeProvider attribute='class' defaultTheme='light' enableSystem disableTransitionOnChange>
+          <NavBar />
+            {children}
+        </ThemeProvider>
       </body>
     </html>
   );

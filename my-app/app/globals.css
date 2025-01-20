@@ -3,39 +3,39 @@
 @tailwind utilities;
 
 @layer base {
-	.light {
-		--background: 0 0% 100%;
-		--foreground: 222.2 84% 4.9%;
+:root {
+  --background: 30 40% 96%; /* Warm, soft cream */
+  --foreground: 0 0% 10%; /* Dark, almost black (#1A1A1A in HSL) */
 
-		--card: 0 0% 100%;
-		--card-foreground: 222.2 84% 4.9%;
+  --card: 30 35% 98%; /* Slightly lighter cream for cards */
+  --card-foreground: 0 0% 10%; /* Same as foreground */
 
-		--popover: 0 0% 100%;
-		--popover-foreground: 222.2 84% 4.9%;
+  --popover: 30 35% 98%; /* Matches card for consistency */
+  --popover-foreground: 0 0% 10%; /* Same as card-foreground */
 
-		--primary: 222.2 47.4% 11.2%;
-		--primary-foreground: 210 40% 98%;
+  --primary: 24 49% 71%; /* `#DEAB90` converted to HSL for primary accents */
+  --primary-foreground: 0 0% 100%; /* White for text on primary */
 
-		--secondary: 210 40% 96.1%;
-		--secondary-foreground: 222.2 47.4% 11.2%;
+  --secondary: 30 30% 90%; /* Subtle beige for secondary elements */
+  --secondary-foreground: 0 0% 20%; /* Slightly lighter for secondary text */
 
-		--muted: 210 40% 96.1%;
-		--muted-foreground: 215.4 16.3% 46.9%;
+  --muted: 30 30% 93%; /* Very light beige for muted elements */
+  --muted-foreground: 0 0% 30%; /* Medium gray for muted text */
 
-		--accent: 210 40% 96.1%;
-		--accent-foreground: 222.2 47.4% 11.2%;
+  --accent: 24 49% 71%; /* Matches primary for consistency */
+  --accent-foreground: 0 0% 100%; /* White for text on accent */
 
-		--destructive: 0 84.2% 60.2%;
-		--destructive-foreground: 210 40% 98%;
+  --destructive: 0 70% 60%; /* Soft coral red */
+  --destructive-foreground: 0 0% 100%; /* White for destructive text */
 
-		--border: 214.3 31.8% 91.4%;
-		--input: 214.3 31.8% 91.4%;
-		--ring: 222.2 84% 4.9%;
+  --border: 30 30% 85%; /* Soft beige-gray for borders */
+  --input: 30 35% 98%; /* Matches card for clean inputs */
+  --ring: 24 49% 71%; /* Matches primary for focus outlines */
 
-		--radius: 0.5rem;
-	}
+  --radius: 0.375rem; /* Slightly rounded corners for modern feel */
+}
 
-	:root {
+	.dark {
 		--background: 222.2 84% 4.9%;
 		--foreground: 210 40% 98%;
 
@@ -74,10 +74,4 @@
 	body {
 		@apply bg-background text-foreground;
 	}
-}
-
-
-.lucide {
-  color: #dce9ec;
-  stroke-width: 2px;
 }

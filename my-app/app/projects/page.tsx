@@ -26,7 +26,7 @@ export default function Projects() {
                 "I used Python and PyTorch to build a random cat image generator using Wasserstein GAN (WGAN), similar to the 'This Person Does Not Exist' website. The dataset was sourced from a public GitHub repository called 'Cat-faces-dataset'.",
             image: '/cats.png',
             techStackicons: [
-                <BiLogoPython className='hover:scale-105' size={45} key={'Python'} fill='yellow' title='Python' />,
+                <BiLogoPython className='hover:scale-105' size={45} key={'Python'} fill='#082f49' title='Python' />,
                 <SiPytorch className='hover:scale-105' size={45} key={'Pytorch'} fill='orange' title='Pytorch' />,
             ],
             linkToProject: 'https://github.com/EvinRasho/Generative-AI-',
@@ -38,7 +38,7 @@ export default function Projects() {
             image: '/drone.jpg',
             techStackicons: [
                 <SiRos className='hover:scale-105' size={40} key={'ROS'} fill='#082f49' title='ROS' />,
-                <BiLogoPython className='hover:scale-105' size={45} key={'Python'} fill='yellow' title='Python' />,
+                <BiLogoPython className='hover:scale-105' size={45} key={'Python'} fill='#082f49' title='Python' />,
                 <SiFlask className='hover:scale-105' size={45} key={'Flask'} fill='#082f49' title='Flask' />,
                 <SiOpencv className='hover:scale-105' size={45} key={'OpenCV'} fill='#22c55e' title='OpenCV' />,
             ],

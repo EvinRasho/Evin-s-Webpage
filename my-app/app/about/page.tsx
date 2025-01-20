@@ -7,7 +7,7 @@ export default function AboutMe() {
         <div className='flex flex-col space-y-5'>
             {/* <Image src='/about-page.jpg' alt='Evin Rasho' width={1800} height={200} className='h-32 w-auto object-cover'></Image> */}
             <div className={`flex flex-col items-center justify-center w-full h-full flex-1 px-0 grayscale text-center bg-[url('/about-page.jpg')]`}>
-                <h1 className='text-2xl md:text-4xl h-full font-bold py-10'>About Me</h1>
+                <h1 className='text-2xl md:text-4xl h-full font-bold py-10 text-white'>About Me</h1>
             </div>
 
             <div className=' flex w-full flex-col justify-evenly gap-10 p-10 lg:flex-row '>

@@ -17,22 +17,22 @@ export default function MobileNav() {
                 <SheetContent side='left' className='opacity-100 bg-black border-r-foreground z-[100]'>
                     <SheetTitle>
                         <SheetClose asChild>
-                        <Link href='/'>
-                            <House
-                                className={`text-l hover:text-gray-700 ${pathname === '/' ? '!text-red-600 !font-bold !stroke-[2px]' : ''}`}
-                                size={35}></House>
+                            <Link href='/'>
+                                <House
+                                    className={` !hover:text-red-500  ${pathname === '/' ? '!text-red-600 !font-bold !stroke-[2px]' : ''}`}
+                                    size={35}></House>
                             </Link>
                         </SheetClose>
                     </SheetTitle>
-                    <nav className='text-l flex flex-col justify-between gap-3 mt-6'>
+                    <nav className=' flex flex-col justify-between gap-3 mt-6'>
                         <SheetClose asChild>
-                        <Link href='/about' className={`text-l hover:text-gray-700 ${pathname === '/about' ? 'text-red-600 font-bold' : ''}`}>
-                            About Me
+                            <Link href='/about' className={` hover:text-red-500 ${pathname === '/about' ? 'text-red-600 font-bold' : ''}`}>
+                                About Me
                             </Link>
                         </SheetClose>
                         <SheetClose asChild>
-                        <Link href='/projects' className={`text-l hover:text-gray-700 ${pathname === '/projects' ? 'text-red-600 font-bold' : ''}`}>
-                            Projects
+                            <Link href='/projects' className={` hover:text-red-500 ${pathname === '/projects' ? 'text-red-600 font-bold' : ''}`}>
+                                Projects
                             </Link>
                         </SheetClose>
                     </nav>
