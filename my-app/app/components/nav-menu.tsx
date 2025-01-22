@@ -15,10 +15,8 @@ export function NavBar() {
     const { setTheme, theme } = useTheme();
     function changeTheme() {
         if (theme === 'light') {
-            console.log('dark');
             setTheme('dark');
         } else {
-            console.log('light');
             setTheme('light');
         }
     }
