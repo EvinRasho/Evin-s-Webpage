@@ -14,7 +14,7 @@ export default function MobileNav() {
                 <SheetTrigger className='ml-4'>
                     <Menu size={35}></Menu>
                 </SheetTrigger>
-                <SheetContent side='left' className='opacity-100 bg-black border-r-foreground z-[100]'>
+                <SheetContent side='left' className='opacity-100  border-r-foreground z-[100]'>
                     <SheetTitle>
                         <SheetClose asChild>
                             <Link href='/'>
