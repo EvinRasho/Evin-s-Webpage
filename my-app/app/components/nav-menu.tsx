@@ -13,10 +13,12 @@ import { Github, Linkedin, Download, Moon, Sun } from 'lucide-react';
 export function NavBar() {
 
     const { setTheme, theme } = useTheme();
+    // const warning =confirm('This is a warning message!');
     function changeTheme() {
         if (theme === 'light') {
             setTheme('dark');
         } else {
+
             setTheme('light');
         }
     }
