@@ -36,7 +36,7 @@ export function NavBar() {
                 {/* Desktop & Mobile */}
                 <div className='flex items-center space-x-4 ml-auto justify-end px-4'>
                     <Link title='View Resume' as={'/Resume.pdf'} href='/Resume.pdf' aria-label='Resume' target='_blank' rel='noopener noreferrer'>
-                        <Download className='hover:hover:text-red-500' size={35} />
+                        <Download className='hover:hover:text-[#38b6ff]' size={35} />
                     </Link>
                     <Link
                         as={'https://www.linkedin.com/in/evin-rasho'}
@@ -44,7 +44,7 @@ export function NavBar() {
                         aria-label='LinkedIn'
                         target='_blank'
                         rel='noopener noreferrer'>
-                        <Linkedin className='hover:hover:text-red-500' size={35} />
+                        <Linkedin className='hover:hover:text-[#38b6ff]' size={35} />
                     </Link>
                     <Link
                         as={'https://github.com/EvinRasho'}
@@ -52,19 +52,19 @@ export function NavBar() {
                         aria-label='GitHub '
                         target='_blank'
                         rel='noopener noreferrer'>
-                        <Github className='hover:hover:text-red-500' size={35} />
+                        <Github className='hover:hover:text-[#38b6ff]' size={35} />
                     </Link>
                     <Sun
                         onClick={changeTheme}
                         strokeWidth={1.75}
                         size={35}
-                        className='rotate-0 scale-100 transition-transform dark:-rotate-90 dark:scale-0 hover:cursor-pointer hover:text-red-500'
+                        className='rotate-0 scale-100 transition-transform dark:-rotate-90 dark:scale-0 hover:cursor-pointer hover:text-[#38b6ff]'
                     />
                     <Moon
                         onClick={changeTheme}
                         strokeWidth={1.75}
                         size={35}
-                        className='absolute rotate-90 scale-0 transition-transform dark:rotate-0 dark:scale-100 hover:cursor-pointer hover:text-red-500'
+                        className='absolute rotate-90 scale-0 transition-transform dark:rotate-0 dark:scale-100 hover:cursor-pointer hover:text-[#38b6ff]'
                     />
                 </div>
             </div>

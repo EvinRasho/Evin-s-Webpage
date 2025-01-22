@@ -19,19 +19,19 @@ export default function MobileNav() {
                         <SheetClose asChild>
                             <Link href='/'>
                                 <House
-                                    className={` !hover:text-red-500  ${pathname === '/' ? '!text-red-600 !font-bold !stroke-[2px]' : ''}`}
+                                    className={` !hover:text-[#38b6ff]  ${pathname === '/' ? '!text-[#38b6ff] !font-bold !stroke-[2px]' : ''}`}
                                     size={35}></House>
                             </Link>
                         </SheetClose>
                     </SheetTitle>
                     <nav className=' flex flex-col justify-between gap-3 mt-6'>
                         <SheetClose asChild>
-                            <Link href='/about' className={` hover:text-red-500 ${pathname === '/about' ? 'text-red-600 font-bold' : ''}`}>
+                            <Link href='/about' className={` hover:text-[#38b6ff] ${pathname === '/about' ? 'text-[#38b6ff] font-bold' : ''}`}>
                                 About Me
                             </Link>
                         </SheetClose>
                         <SheetClose asChild>
-                            <Link href='/projects' className={` hover:text-red-500 ${pathname === '/projects' ? 'text-red-600 font-bold' : ''}`}>
+                            <Link href='/projects' className={` hover:text-[#38b6ff] ${pathname === '/projects' ? 'text-[#38b6ff] font-bold' : ''}`}>
                                 Projects
                             </Link>
                         </SheetClose>
